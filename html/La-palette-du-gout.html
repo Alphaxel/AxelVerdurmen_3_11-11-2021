@@ -4,16 +4,18 @@
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <script src="https://kit.fontawesome.com/2f8829efb2.js" crossorigin="anonymous"></script>        
-        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="../css/style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet"> 
+        <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet"> 
         <title>Ohmyfood! - A la française</title>
     </head>
 
     <body>
-        <header>
-            <i class="fas fa-arrow-left"></i>
-            <span><img src="../img/LogoOhMyFood.png" alt="Logo de Ohmyfood!"></span>
+        <header class="menu_header">
+            <a href="../index.html" class="menu_header_link"><i class="fas fa-arrow-left menu_header_icon"></i></a>
+            <img src="../img/LogoOhMyFood.png" alt="Logo de Ohmyfood!" class="menu_header_logo">
         </header>
-
+<div class="brut">
         <span><img src="../img/MenuLaPaletteDuGout.jpg"></span>
 
         <main>
@@ -159,24 +161,27 @@
                 <div>Commander</div>
             </section>
         </main>
-        <footer class="footerall">
-            <span><img src="../img/LogoOhMyFood.png"></span>
-            <ul>
-                <li>
-                    <i class="fas fa-utensils"></i>
-                    <span>Proposer un restaurant</span>
-                </li>
-                <li>
-                    <i class="fas fa-hands-helping"></i>
-                    <span>Devenir Partenaire</span>
-                </li>
-                <li>
-                    <span>Mentions légales</span>
-                </li>
-                <li>
-                    <a href="mailto:votreadresse@mail.fr">Contact</a>  <!--Adresse Placeholder-->
-                </li>
-            </ul>
-        </footer>
+</div>
+    <footer class="footer_all">
+        <ul class="footer_list">
+            <li class="footer_line footer_title">
+                <span>ohmyfood</span>
+            </li>
+            <li class="footer_line">
+                <i class="fas fa-utensils footer_icon"></i>
+                <span class="footer_text footer_link">Proposer un restaurant</span>
+            </li>
+            <li class="footer_line">
+                <i class="fas fa-hands-helping footer_icon"></i>
+                <span class="footer_text footer_link">Devenir Partenaire</span>
+            </li>
+            <li class="footer_line">
+                <span class="footer_text">Mentions légales</span>
+            </li>
+            <li class="footer_line">
+                <a href="mailto:votreadresse@mail.fr" class="footer_text">Contact</a>  <!--Adresse Placeholder-->
+            </li>
+        </ul>
+    </footer>
     </body>
 </html>

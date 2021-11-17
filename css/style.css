@@ -1,0 +1,263 @@
+.brut{
+    display:none;
+}
+
+:root{
+    --main-color:#9356DC;
+    --secondary-color:#FF79DA;
+    --tertiarycolor:#99E2D0;
+}
+
+/*****PAGE D'ACCUEIL*****/
+
+/*General*/
+
+body{
+    margin:0px;
+    font-family: "Roboto", "Sans serif";
+}
+
+a{
+    color:inherit;
+    text-decoration:none;
+}
+
+
+/*Header*/
+
+.index_header{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 20px 0px 15px 0px;
+}
+
+.index_header_logo{
+    width: 50%;
+    
+}
+
+/*Localisation*/
+
+.localisation{
+    display:flex;
+    height:42px;
+    align-items: center;
+    justify-content: center;
+    background-color: #e7e7e7;
+    box-shadow:0 5px 5px -6px gray inset;
+}
+
+.localisation_marker{
+    font-size: 17px;
+}
+
+.localisation_text{
+    font-size: 16px;
+    margin-left: 16px;
+}
+
+/*Presentation*/
+
+.presentation{
+    background-color: #f5f5f5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.presentation_title{
+    text-align: center;
+    font-size: 23px ;
+    margin:0px;
+    padding:35px 60px 15px 60px;
+}
+
+.presentation_text{
+    font-size: 17px;
+    text-align: center;
+    margin:0px;
+    padding:0px 32px 20px 32px;
+}
+
+.presentation_button{
+    color:white;
+    font-size: 18px;
+    padding:20px;
+    background: linear-gradient(var(--secondary-color),var(--main-color));
+    box-shadow:0px 4px 15px -5px grey;
+    border-radius: 30px;
+    margin-bottom: 55px;
+}
+
+/*Tutorial*/
+
+.tutorial_boxes{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.tutorial_title{
+    font-size: 24px ;
+    margin: 35px 0px 20px 15px;
+}
+
+.tutorial_box{
+    display:flex;
+    align-items: center;
+    margin:12px 0px 12px 0px;
+    width: 100%;
+}
+
+.tutorial_box_number{
+    background-color: var(--main-color);
+    color:white;
+    font-size: 16px;
+    border-radius: 50%;
+    padding: 4px;
+    width: 18px;
+    height: 18px;
+    text-align: center;
+    position: relative;
+    left:15px;
+}
+
+.tutorial_box_content{
+    background-color: #f5f5f5;
+    border-radius: 20px;
+    box-shadow:0px 4px 15px -5px grey;
+    padding:25px 0px 25px 0px;
+    width: 90%;
+}
+
+.tutorial_box_icon{
+    color:grey;
+    font-size: 20px;
+    padding:0px 20px 0px 35px;
+}
+
+.tutorial_box_text{
+    font-size: 18px;
+}
+
+/*Restaurants*/
+
+.restaurant{
+    background-color:#f5f5f5 ;
+    margin-top: 50px;
+    padding-bottom: 50px;
+}
+
+.resto_title{
+    padding:40px 0px 0px 15px;
+}
+
+.resto_cards{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.resto_card{
+    display: flex;
+    flex-direction: column;
+    width:90%;
+    height: 230px;
+    background-color: #fff;
+    margin:10px 0px;
+    border-radius: 15px;
+    box-shadow:0px 4px 15px -5px grey;
+}
+
+.resto_card_img{
+    object-fit: cover;
+    height: 70%;
+    border-radius: 15px 15px 0px 0px;
+}
+
+.resto_card_new{
+    display:none;
+}
+
+.resto_card_footer{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:12px;
+}
+
+
+.resto_card_text_name{
+    margin:0px;
+    padding-bottom: 5px;
+    font-size: 18px ;
+
+}
+
+.resto_card_fav{
+    font-size:20px;
+    padding-right:10px;
+}
+
+/*Footer*/
+
+.footer_all{
+    background-color:#303030;
+    color:white;
+    padding:20px 0px 30px 0px;
+}
+
+.footer_list{
+    list-style-type: none;
+    margin:0px;
+    padding-left:25px;
+    font-size: 15px ;
+
+}
+
+.footer_line{
+    padding:5px 0px;
+}
+
+.footer_title{
+    font-family: 'Shrikhand', cursive;
+    font-size: 16px;
+    padding-bottom:15px;
+}
+
+.footer_icon{
+    width:15px ;
+    font-size:13px ;
+    padding-right:5px;
+}
+
+.footer_text:hover{
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.footer_link{
+    font-weight: bold;
+}
+
+
+
+/*****PAGE DE MENU*****/
+
+/*Header*/
+
+.menu_header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0px 15px 0px;
+}
+
+.menu_header_link{
+    justify-self: flex-start;
+}
+
+.menu_header_logo{
+    width: 50%;
+}
