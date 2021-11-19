@@ -32,9 +32,12 @@ a{
     padding: 20px 0px 15px 0px;
 }
 
-.index_header_logo{
+.header_logo{
+    width: 100%;   
+}
+
+.header_logo_link{
     width: 50%;
-    
 }
 
 /*Localisation*/
@@ -131,6 +134,15 @@ a{
     width: 90%;
 }
 
+.tutorial_box_content:hover{
+    background-color: #f4ebff;
+    cursor:pointer;
+}
+
+.tutorial_box_content:hover .tutorial_box_icon{
+    color:var(--main-color);
+}
+
 .tutorial_box_icon{
     color:grey;
     font-size: 20px;
@@ -139,6 +151,7 @@ a{
 
 .tutorial_box_text{
     font-size: 18px;
+    font-weight: 500;
 }
 
 /*Restaurants*/
@@ -159,6 +172,10 @@ a{
     align-items: center;
 }
 
+
+
+
+
 .resto_card{
     display: flex;
     flex-direction: column;
@@ -170,17 +187,53 @@ a{
     box-shadow:0px 4px 15px -5px grey;
 }
 
-.resto_card_img{
-    object-fit: cover;
+.resto_card_link{
+    height: 100%;
+}
+
+.resto_card_figure{
+    height: 100%;
+    margin:0px;
+}
+
+
+.resto_card_img_part{
     height: 70%;
+}
+.resto_card_img{
+    height:100%;
+    width: 100%;
+    object-fit: cover;
     border-radius: 15px 15px 0px 0px;
 }
 
-.resto_card_new{
-    display:none;
+.img_palette{
+    object-position: 0px -50px;
+}
+.img_note{
+    object-position: 0px -165px;
+}
+.img_french{
+    object-position: 0px -60px;
+}
+.img_delice{
+    object-position: 0px -65px ;
 }
 
-.resto_card_footer{
+
+
+.resto_card_new{
+    position: absolute;
+    font-size: 16px;
+    z-index: 1;
+    font-weight: bold;
+    padding:7px 16px;
+    color:#288f70;
+    border-radius: 2px;
+    background-color: var(--tertiarycolor);
+}
+
+.resto_card_figcaption{
     display:flex;
     justify-content: space-between;
     align-items: center;
@@ -199,6 +252,7 @@ a{
     font-size:20px;
     padding-right:10px;
 }
+
 
 /*Footer*/
 
@@ -220,6 +274,10 @@ a{
     padding:5px 0px;
 }
 
+.footer_line:hover{
+    cursor: pointer;
+}
+
 .footer_title{
     font-family: 'Shrikhand', cursive;
     font-size: 16px;
@@ -238,7 +296,7 @@ a{
 }
 
 .footer_link{
-    font-weight: bold;
+    font-weight: 500;
 }
 
 
@@ -252,12 +310,150 @@ a{
     justify-content: center;
     align-items: center;
     padding: 20px 0px 15px 0px;
+    height: 50px;
 }
 
-.menu_header_link{
-    justify-self: flex-start;
+.menu_header_arrow{
+    position:absolute;
+    left:30px;
+    font-size: 18px ;
 }
 
-.menu_header_logo{
-    width: 50%;
+
+
+.menu_img{
+    display: block;
+    width: 100%;
+    height:auto;
+    z-index:-1;
+    position: absolute;
+    top:70px;
+}
+
+/*Menu*/
+
+.menu_list{
+    background-color: #f5f5f5;
+    padding:40px 20px;
+    border-radius: 35px 35px 0px 0px;
+    margin-top: 195px;
+}
+
+.menu_list_header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu_title{
+    font-family: 'Shrikhand', cursive;
+    font-size:29px ;
+    margin:0px 0px 15px 0px;
+}
+
+.menu_fav{
+    font-size: 27px;
+    padding-right: 10px;
+    margin:0px 0px 15px 0px;
+}
+
+.menu_cardgroup{
+    margin:20px 0px 30px 0px;
+}
+
+.menu_part_title{
+    position: relative;
+    font-weight: normal;
+    font-size: 17px;
+    width: fit-content;
+}
+
+.menu_part_title::before {    
+    content: '';
+    display: block;
+    position: absolute;
+    top: 23px;
+    width: 45px;
+    left: 0px;
+    border-bottom: var(--tertiarycolor) 3px solid;
+}
+
+.menu_card{
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    border-radius: 10px;
+    margin:15px 0px;
+    box-shadow:0px 4px 15px -8px grey;
+    width: 100%;
+}
+
+.menu_card_text{
+    display: flex;
+    flex-direction: column;
+    padding:10px 0px 10px 10px;
+    width: 100%;
+    white-space:nowrap ;
+    overflow: hidden;
+}
+
+.menu_card_text_name{
+    margin:0px;
+    padding-bottom: 5px;
+    
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.menu_card_text_desc{
+    font-size: 15px ;
+    margin:0px;
+    width: 90%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.menu_card_right{
+    display: flex;
+}
+
+.menu_card_price_text{
+    align-self: flex-end;
+    font-weight: bold;
+    margin:0px;
+    padding:0px 20px 10px 0px;
+}
+
+.menu_card_confirm{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--tertiarycolor);
+    height: 100%;
+    width: 60px;
+    border-radius: 0px 10px 10px 0px;
+}
+
+.menu_card_checked{
+    font-size:19px ;
+    color:white;
+}
+
+.menu_checkoutarea{
+    display:flex ;
+    justify-content: center;
+}
+
+.menu_checkout{
+    color:white;
+    font-size: 19px;
+    padding:15px 50px;
+    margin:20px 0px 20px 0px;
+    background: linear-gradient(var(--secondary-color),var(--main-color));
+    box-shadow:0px 4px 15px -5px grey;
+    border-radius: 30px;
+}
+
+.menu_checkout:hover{
+    cursor: pointer;
 }

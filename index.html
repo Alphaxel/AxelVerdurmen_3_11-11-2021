@@ -16,7 +16,9 @@
         </div>
 
         <header class="index_header">
-            <img src="img/LogoOhMyFood.png" alt="Logo de Ohmyfood!" class="index_header_logo">
+            <a href="index.html" class="header_logo_link">
+                <img src="img/LogoOhMyFood.png" alt="Logo de Ohmyfood!" class="header_logo">
+            </a>
         </header>
 
         <section class="localisation">
@@ -32,7 +34,7 @@
 
 
         <section class="tutorial">
-            <h3 class="tutorial_title">Fonctionnement</h3>
+            <h2 class="tutorial_title">Fonctionnement</h2>
             <div class="tutorial_boxes">
                 <div class="tutorial_box">
                     <span class="tutorial_box_number">1</span>
@@ -60,58 +62,82 @@
         <section class="restaurant" id="restaurant" >
             <h2 class="resto_title">Restaurants</h2>
             <div class="resto_cards">
-                <a href="html/La-palette-du-gout.html" class="resto_card">
-                    <img src="img/MenuLaPaletteDuGout.jpg" alt="Exemple de repas de La palette du goût" class="resto_card_img">
-                    <span class="resto_card_new">Nouveau</span>
-                    <footer class="resto_card_footer">
-                        <div class="resto_card_text">
-                            <h2 class="resto_card_text_name">La palette du goût</h2>
-                            <span class="resto_card_text_local">Ménilmontant</span>
-                        </div>
-                        <i class="far fa-heart resto_card_fav"></i>
-                    </footer>
-                </a>
+                <article class="resto_card">
+                    <a href="html/La-palette-du-gout.html" class="resto_card_link">
+                        <figure class="resto_card_figure">
+                            <div class="resto_card_img_part">
+                                <span class="resto_card_new">Nouveau</span>
+                                <img src="img/MenuLaPaletteDuGout.jpg" alt="Exemple de repas de La palette du goût" class="resto_card_img img_palette">
+                            </div>
+                            <figcaption class="resto_card_figcaption">
+                                <div class="resto_card_text">
+                                    <h2 class="resto_card_text_name">La palette du goût</h2>
+                                    <span class="resto_card_text_local">Ménilmontant</span>
+                                </div>
+                                <i class="far fa-heart resto_card_fav"></i>
+                            </figcaption>
+                        </figure>
+                    </a>
+                </article>
 
-                <a class="resto_card">
-                    <img src="img/MenuLaNoteEnchantee.jpg" alt="Exemple de repas de La Note Enchantée" class="resto_card_img">
-                    <span class="resto_card_new">Nouveau</span>
-                    <footer class="resto_card_footer">
-                        <div class="resto_card_footer_text">
-                            <h2 class="resto_card_text_name">La note enchantée</h2>
-                            <span class="resto_card_text_local">Charonne</span>
-                        </div>
-                        <i class="far fa-heart resto_card_fav"></i>
-                    </footer>
-                </a>
+                <article class="resto_card">
+                    <a href="html/#" class="resto_card_link">
+                        <figure class="resto_card_figure">
+                            <div class="resto_card_img_part">
+                                <span class="resto_card_new">Nouveau</span>
+                                <img src="img/MenuLaNoteEnchantee.jpg" alt="Exemple de repas de La note enchantée" class="resto_card_img img_note">
+                            </div>
+                            <figcaption class="resto_card_figcaption">
+                                <div class="resto_card_text">
+                                    <h2 class="resto_card_text_name">La note enchantée</h2>
+                                    <span class="resto_card_text_local">Charonne</span>
+                                </div>
+                                <i class="far fa-heart resto_card_fav"></i>
+                            </figcaption>
+                        </figure>
+                    </a>
+                </article>
+
+                <article class="resto_card">
+                    <a href="html/#" class="resto_card_link">
+                        <figure class="resto_card_figure">
+                            <div class="resto_card_img_part">
+                                <img src="img/MenuALaFrancaise.jpg" alt="Exemple de repas d'À la française'" class="resto_card_img img_french">
+                            </div>
+                            <figcaption class="resto_card_figcaption">
+                                <div class="resto_card_text">
+                                    <h2 class="resto_card_text_name">À la française</h2>
+                                    <span class="resto_card_text_local">Cité Rouge</span>
+                                </div>
+                                <i class="far fa-heart resto_card_fav"></i>
+                            </figcaption>
+                        </figure>
+                    </a>
+                </article>
                 
-                <a href class="resto_card">
-                    <img src="img/MenuALaFrancaise.jpg" alt="Exemple de repas d'A La Française" class="resto_card_img">
-                    <footer class="resto_card_footer">
-                        <div class="resto_card_footer_text">
-                            <h2 class="resto_card_text_name">À la française</h2>
-                            <span class="resto_card_text_local">Cité Rouge</span>
-                        </div>
-                        <i class="far fa-heart resto_card_fav"></i>
-                    </footer>
-                </a>
-                
-                <a class="resto_card">
-                    <img src="img/MenuLeDeliceDesSens.jpg" alt="Exemple de repas du Délice des Sens" class="resto_card_img">
-                    <footer class="resto_card_footer">
-                        <div class="resto_card_footer_text">
-                            <h2 class="resto_card_text_name">Le délice des sens</h2>
-                            <span class="resto_card_text_local">Folie-Méricourt</span>
-                        </div>
-                        <i class="far fa-heart resto_card_fav"></i>
-                    </footer>
-                </a>
+                <article class="resto_card">
+                    <a href="html/#" class="resto_card_link">
+                        <figure class="resto_card_figure">
+                            <div class="resto_card_img_part">
+                                <img src="img/MenuLeDeliceDesSens.jpg" alt="Exemple de repas du Délice des sens'" class="resto_card_img img_delice">
+                            </div>
+                            <figcaption class="resto_card_figcaption">
+                                <div class="resto_card_text">
+                                    <h2 class="resto_card_text_name">Le délice des sens</h2>
+                                    <span class="resto_card_text_local">Folie-Méricourt</span>
+                                </div>
+                                <i class="far fa-heart resto_card_fav"></i>
+                            </figcaption>
+                        </figure>
+                    </a>
+                </article>
             </div>
         </section>
 
         <footer class="footer_all">
             <ul class="footer_list">
                 <li class="footer_line footer_title">
-                    <span>ohmyfood</span>
+                    <span><a href="index.html">ohmyfood</a></span>
                 </li>
                 <li class="footer_line">
                     <i class="fas fa-utensils footer_icon"></i>

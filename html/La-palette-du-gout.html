@@ -12,160 +12,163 @@
 
     <body>
         <header class="menu_header">
-            <a href="../index.html" class="menu_header_link"><i class="fas fa-arrow-left menu_header_icon"></i></a>
-            <img src="../img/LogoOhMyFood.png" alt="Logo de Ohmyfood!" class="menu_header_logo">
+            <a href="../index.html" class="menu_header_arrow"><i class="fas fa-arrow-left menu_header_icon"></i></a>
+            <a href="../index.html" class="header_logo_link"><img src="../img/LogoOhMyFood.png" alt="Logo de Ohmyfood!" class="header_logo" ></a>
         </header>
-<div class="brut">
-        <span><img src="../img/MenuLaPaletteDuGout.jpg"></span>
 
+        <img src="../img/MenuLaPaletteDuGout.jpg" alt="Exemple de repas de La palette du goût" class="menu_img">
         <main>
-            <section class="menu">
-                <header>
-                    <h1>La palette du goût</h1>
-                    <i class="far fa-heart"></i>
+            <section class="menu_list">
+                <header class="menu_list_header">
+                    <h1 class="menu_title">La palette du goût</h1>
+                    <i class="far fa-heart menu_fav"></i>
                 </header>
 
-                <section class="menu_entree">
+                <section class="menu_part">
                     <header>
-                        <h2>Entrées</h2>
+                        <h2 class="menu_part_title">ENTRÉES</h2>
                     </header>
-                    <section class="menu_card">
-                        <div class="menu_card_text">
-                            <h3 class="menu_card_text_name">Fricassée d'escargot</h3>
-                            <p class="menu_card_text_desc">Au piment d'Espelette</p>
-                        </div>
-                        <div class="menu_card_price">
-                            <p class="menu_card_price_text">25€</p>
-                        </div>
-                        <div class="menu_card_confirm">
-                            <i class="fas fa-check-circle"></i>
-                        </div>
-                    </section>
+                    <div class="menu_cardgroup">
+                        <article class="menu_card">
+                            <div class="menu_card_text">
+                                <h3 class="menu_card_text_name">Fricassée d'escargot</h3>
+                                <p class="menu_card_text_desc">Au piment d'Espelette</p>
+                            </div>
+                            <div class="menu_card_right">
+                                <p class="menu_card_price_text">25€</p>
+                                <div class="menu_card_confirm">
+                                    <i class="fas fa-check-circle menu_card_checked"></i>
+                                </div>
+                            </div>
+                        </article>
 
-                    <section class="menu_card">
-                        <div class="menu_card_text">
-                            <h3 class="menu_card_text_name">Foie gras de canard mi-cuit</h3>
-                            <p class="menu_card_text_desc">Et ses copeaux de truffe noire</p>
-                        </div>
-                        <div class="menu_card_price">
-                            <p class="menu_card_price_text">35€</p>  
-                        </div>
-                        <div class="menu_card_confirm">
-                            <i class="fas fa-check-circle"></i>
-                        </div>
-                    </section>
+                        <article class="menu_card">
+                            <div class="menu_card_text">
+                                <h3 class="menu_card_text_name">Foie gras de canard mi-cuit</h3>
+                                <p class="menu_card_text_desc">Et ses copeaux de truffe noire</p>
+                            </div>
+                            <div class="menu_card_right">
+                                <p class="menu_card_price_text">35€</p>
+                                <div class="menu_card_confirm">
+                                    <i class="fas fa-check-circle menu_card_checked"></i>
+                                </div>
+                            </div>
+                        </article>
 
-                    <section class="menu_card">
-                        <div class="menu_card_text">
-                            <h3 class="menu_card_text_name">Oeuf au plat</h3>
-                            <p class="menu_card_text_desc">Assaisonné à la truffe sur lit de caviar</p>
-                        </div>
-                        <div class="menu_card_price">
-                            <p class="menu_card_price_text">20€</p>  
-                        </div>
-                        <div class="menu_card_confirm">
-                            <i class="fas fa-check-circle"></i>
-                        </div>
-                    </section>
+                        <article class="menu_card">
+                            <div class="menu_card_text">
+                                <h3 class="menu_card_text_name">Oeuf au plat</h3>
+                                <p class="menu_card_text_desc">Assaisonné à la truffe sur lit de caviar</p>
+                            </div>
+                            <div class="menu_card_right">
+                                <p class="menu_card_price_text">20€</p>
+                                <div class="menu_card_confirm">
+                                    <i class="fas fa-check-circle menu_card_checked"></i>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
                 </section>
 
-                <section class="menu_plat">
+                <section class="menu_part">
                     <header>
-                        <h2>Plats</h2>
+                        <h2 class="menu_part_title">PLATS</h2>
                     </header>
+                    <div class="menu_cardgroup">
+                        <article class="menu_card">
+                            <div class="menu_card_text">
+                                <h3 class="menu_card_text_name">Filet de boeuf aux herbes</h3>
+                                <p class="menu_card_text_desc">Accompagné de sa ribambelle de légumes</p>
+                            </div>
+                            <div class="menu_card_right">
+                                <p class="menu_card_price_text">40€</p>
+                                <div class="menu_card_confirm">
+                                    <i class="fas fa-check-circle menu_card_checked"></i>
+                                </div>
+                            </div>
+                        </article>
+                        
+                        <article class="menu_card">
+                            <div class="menu_card_text">
+                                <h3 class="menu_card_text_name">Parmentier de queue de boeuf</h3>
+                                <p class="menu_card_text_desc">À la truffe noire sur sa purée de panais</p>
+                            </div>
+                                <div class="menu_card_right">
+                                    <p class="menu_card_price_text">35€</p>
+                                    <div class="menu_card_confirm">
+                                        <i class="fas fa-check-circle menu_card_checked"></i>
+                                    </div>
+                                </div>
+                        </article>
 
-                    <section class="menu_card">
-                        <div class="menu_card_text">
-                            <h3 class="menu_card_text_name">Filet de boeuf aux herbes</h3>
-                            <p class="menu_card_text_desc">Accompagné de sa ribambelle de légumes</p>
-                        </div>
-                        <div class="menu_card_price">
-                            <p class="menu_card_price_text">40€</p>  
-                        </div>
-                        <div class="menu_card_confirm">
-                            <i class="fas fa-check-circle"></i>
-                        </div>
-                    </section>
-                    
-                    <section class="menu_card">
-                        <div class="menu_card_text">
-                            <h3 class="menu_card_text_name">Parmentier de queue de boeuf</h3>
-                            <p class="menu_card_text_desc">À la truffe noire sur sa purée de panais</p>
-                        </div>
-                        <div class="menu_card_price">
-                            <p class="menu_card_price_text">35€</p>  
-                        </div>
-                        <div class="menu_card_confirm">
-                            <i class="fas fa-check-circle"></i>
-                        </div>
-                    </section>
-
-                    <section class="menu_card">
-                        <div class="menu_card_text">
-                            <h3 class="menu_card_text_name">Filet de turbot</h3>
-                            <p class="menu_card_text_desc">Aux agrumes</p>
-                        </div>
-                        <div class="menu_card_price">
-                            <p class="menu_card_price_text">44€</p>  
-                        </div>
-                        <div class="menu_card_confirm">
-                            <i class="fas fa-check-circle"></i>
-                        </div>
-                    </section>
+                        <article class="menu_card">
+                            <div class="menu_card_text">
+                                <h3 class="menu_card_text_name">Filet de turbot</h3>
+                                <p class="menu_card_text_desc">Aux agrumes</p>
+                            </div>
+                            <div class="menu_card_right">
+                                <p class="menu_card_price_text">44€</p>
+                                <div class="menu_card_confirm">
+                                    <i class="fas fa-check-circle menu_card_checked"></i>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
                 </section>
 
-                <section class="menu_dessert">
+                <section class="menu_part">
                     <header>
-                        <h2>Desserts</h2>
+                        <h2 class="menu_part_title">DESSERTS</h2>
                     </header>
-                    <section class="menu_card">
-                        <div class="menu_card_text">
-                            <h3 class="menu_card_text_name">Paris-Brest</h3>
-                            <p class="menu_card_text_desc">Revisité</p>
-                        </div>
-                        <div class="menu_card_price">
-                            <p class="menu_card_price_text">18€</p>  
-                        </div>
-                        <div class="menu_card_confirm">
-                            <i class="fas fa-check-circle"></i>
-                        </div>
-                    </section>
+                    <div class="menu_cardgroup">
+                        <article class="menu_card">
+                            <div class="menu_card_text">
+                                <h3 class="menu_card_text_name">Paris-Brest</h3>
+                                <p class="menu_card_text_desc">Revisité</p>
+                            </div>
+                            <div class="menu_card_right">
+                                <p class="menu_card_price_text">18€</p>
+                                <div class="menu_card_confirm">
+                                    <i class="fas fa-check-circle menu_card_checked"></i>
+                                </div>
+                            </div>
+                        </article>
 
-                    <section class="menu_card">
-                        <div class="menu_card_text">
-                            <h3 class="menu_card_text_name">Macaron au chocolat d'exception </h3>
-                            <p class="menu_card_text_desc">Et glace à la vanille de Madagascar</p>
-                        </div>
-                        <div class="menu_card_price">
-                            <p class="menu_card_price_text">22€</p>  
-                        </div>
-                        <div class="menu_card_confirm">
-                            <i class="fas fa-check-circle"></i>
-                        </div>
-                    </section>
-                    
-                    <section class="menu_card">
-                        <div class="menu_card_text">
-                            <h3 class="menu_card_text_name">Mousse au chocolat </h3>
-                            <p class="menu_card_text_desc">Au piment d'Espelette et à la truffe noire</p>
-                        </div>
-                        <div class="menu_card_price">
-                            <p class="menu_card_price_text">23€</p>  
-                        </div>
-                        <div class="menu_card_confirm">
-                            <i class="fas fa-check-circle"></i>
-                        </div>
-                    </section>
+                        <article class="menu_card">
+                            <div class="menu_card_text">
+                                <h3 class="menu_card_text_name">Macaron au chocolat d'exception </h3>
+                                <p class="menu_card_text_desc">Et glace à la vanille de Madagascar</p>
+                            </div>
+                            <div class="menu_card_right">
+                                <p class="menu_card_price_text">22€</p>
+                                <div class="menu_card_confirm">
+                                    <i class="fas fa-check-circle menu_card_checked"></i>
+                                </div>
+                            </div>
+                        </article>
+                        
+                        <article class="menu_card">
+                            <div class="menu_card_text">
+                                <h3 class="menu_card_text_name">Mousse au chocolat </h3>
+                                <p class="menu_card_text_desc">Au piment d'Espelette et à la truffe noire</p>
+                            </div>
+                            <div class="menu_card_right">
+                                <p class="menu_card_price_text">23€</p>
+                                <div class="menu_card_confirm">
+                                    <i class="fas fa-check-circle menu_card_checked"></i>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
                 </section>
 
-                <div>Commander</div>
+                <div class="menu_checkoutarea"><span class="menu_checkout">Commander</span></div>
             </section>
         </main>
-</div>
     <footer class="footer_all">
         <ul class="footer_list">
             <li class="footer_line footer_title">
-                <span>ohmyfood</span>
+                <span> <a href="../index.html">ohmyfood</a></span>
             </li>
             <li class="footer_line">
                 <i class="fas fa-utensils footer_icon"></i>
