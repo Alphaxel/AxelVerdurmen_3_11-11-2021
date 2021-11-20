@@ -1,4 +1,4 @@
-.brut{
+ .brut{
     display:none;
 }
 
@@ -199,6 +199,9 @@ a{
 
 .resto_card_img_part{
     height: 70%;
+    width: 100%;
+    display: flex;
+    position: relative;
 }
 .resto_card_img{
     height:100%;
@@ -225,12 +228,12 @@ a{
 .resto_card_new{
     position: absolute;
     font-size: 16px;
-    z-index: 1;
     font-weight: bold;
-    padding:7px 16px;
-    color:#288f70;
+    padding: 7px 14px;
+    color: #288f70;
     border-radius: 2px;
     background-color: var(--tertiarycolor);
+    right: 15px;
 }
 
 .resto_card_figcaption{
@@ -249,10 +252,38 @@ a{
 }
 
 .resto_card_fav{
-    font-size:20px;
+    font-size:19px;
     padding-right:10px;
 }
 
+.resto_card_fav_full{
+    font-size:21px;
+    position:absolute;
+    background: transparent;
+    -webkit-background-clip: text;
+    margin-left:-30px;
+    color:transparent;
+}
+
+.resto_card_fav_full:hover{
+    background:linear-gradient(var(--main-color),var(--secondary-color));
+    background-size: 100% 100%;
+    -webkit-background-clip: text;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    animation: Fav 0.5s ease-in-out;
+    cursor:pointer;
+}
+
+@keyframes Fav{
+    0%{
+        background-size: 100% 0%;
+    }
+    100%{
+        background-size:100% 100%;
+    }
+}
+        
 
 /*Footer*/
 
