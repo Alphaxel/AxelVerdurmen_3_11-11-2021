@@ -1,4 +1,4 @@
-.brut{
+ .brut{
     display:none;
 }
 
@@ -6,6 +6,12 @@
     --main-color:#9356DC;
     --secondary-color:#FF79DA;
     --tertiarycolor:#99E2D0;
+}
+
+/*****GLOBAL*****/
+.big_btn:hover{
+    filter:brightness(1.05);
+    box-shadow:0px 4px 15px -2px grey;
 }
 
 /*****PAGE D'ACCUEIL*****/
@@ -187,6 +193,10 @@ a{
     box-shadow:0px 4px 15px -5px grey;
 }
 
+.resto_card:hover{
+    transform:scale(1.01)
+}
+
 .resto_card_link{
     height: 100%;
 }
@@ -199,6 +209,9 @@ a{
 
 .resto_card_img_part{
     height: 70%;
+    width: 100%;
+    display: flex;
+    position: relative;
 }
 .resto_card_img{
     height:100%;
@@ -225,12 +238,12 @@ a{
 .resto_card_new{
     position: absolute;
     font-size: 16px;
-    z-index: 1;
     font-weight: bold;
-    padding:7px 16px;
-    color:#288f70;
+    padding: 7px 14px;
+    color: #288f70;
     border-radius: 2px;
     background-color: var(--tertiarycolor);
+    right: 15px;
 }
 
 .resto_card_figcaption{
@@ -249,10 +262,38 @@ a{
 }
 
 .resto_card_fav{
-    font-size:20px;
+    font-size:19px;
     padding-right:10px;
 }
 
+.resto_card_fav_full{
+    font-size:21px;
+    position:absolute;
+    background: transparent;
+    -webkit-background-clip: text;
+    margin-left:-30px;
+    color:transparent;
+}
+
+.resto_card_fav_full:hover{
+    background:linear-gradient(var(--main-color),var(--secondary-color));
+    background-size: 100% 100%;
+    -webkit-background-clip: text;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    animation: Fav 0.5s ease-in-out;
+    cursor:pointer;
+}
+
+@keyframes Fav{
+    0%{
+        background-size: 100% 0%;
+    }
+    100%{
+        background-size:100% 100%;
+    }
+}
+        
 
 /*Footer*/
 
@@ -347,19 +388,76 @@ a{
 
 .menu_title{
     font-family: 'Shrikhand', cursive;
-    font-size:29px ;
+    font-size:27px ;
     margin:0px 0px 15px 0px;
 }
 
+.menu_fav_area{
+    align-self: center;
+    padding-right: 10px;
+    margin:0px 0px 15px 5px;
+}
 .menu_fav{
     font-size: 27px;
-    padding-right: 10px;
-    margin:0px 0px 15px 0px;
 }
+.menu_fav_full{
+    font-size:29px;
+    position:absolute;
+    background: transparent;
+    -webkit-background-clip: text;
+    margin-left:-28px;
+    color:transparent;
+}
+
+.menu_fav_full:hover{
+    background:linear-gradient(var(--main-color),var(--secondary-color));
+    background-size: 100% 100%;
+    -webkit-background-clip: text;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    animation: Fav 0.7s ease-in-out;
+    cursor:pointer;
+}
+
+@keyframes Fav{
+    0%{
+        background-size: 100% 0%;
+    }
+    100%{
+        background-size:100% 100%;
+    }
+}
+
 
 .menu_cardgroup{
     margin:20px 0px 30px 0px;
+    transform:translateX(0);
+    opacity:100%;
 }
+
+.cardgroup1{
+    animation: cardgroupspawn 1s backwards  ;
+}
+
+.cardgroup2{
+    animation: cardgroupspawn 1s 0.3s backwards  ;
+}
+
+.cardgroup3{
+    animation: cardgroupspawn 1s 0.6s backwards  ;
+}
+
+@keyframes cardgroupspawn {
+    0% {
+        transform: translateX(-40%);
+        opacity: 0%;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 100%;
+    }
+}
+
 
 .menu_part_title{
     position: relative;
@@ -386,6 +484,7 @@ a{
     margin:15px 0px;
     box-shadow:0px 4px 15px -8px grey;
     width: 100%;
+    overflow:hidden;
 }
 
 .menu_card_text{
@@ -432,11 +531,23 @@ a{
     height: 100%;
     width: 60px;
     border-radius: 0px 10px 10px 0px;
+    margin-right:-60px;
+    transition: margin-right 0.8s ;
+}
+
+.menu_card:hover .menu_card_confirm{
+    margin-right:0px;
 }
 
 .menu_card_checked{
     font-size:19px ;
     color:white;
+    transform:rotate(180deg);
+    transition: transform 0.4s 0.1s;
+}
+
+.menu_card:hover .menu_card_checked{
+    transform:rotate(0deg);
 }
 
 .menu_checkoutarea{
