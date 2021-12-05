@@ -42,6 +42,7 @@
 
 /*****GLOBAL*****/
 
+
 body{
     margin:0px;
     font-family: "Roboto", "Sans serif";
@@ -628,6 +629,7 @@ a{
 
 .footer_title{
     width:100%;
+    margin:0px 15px;
 }
 
 .footer_line{
