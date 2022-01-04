@@ -664,12 +664,12 @@ a{
 
 .menu_img{
     top:80px;
-    width:100%;
     object-position: 0px -300px;
+    object-fit: cover;
+    height: 600px;
 }
 
 .menu_list{
-    
     margin:auto;
     margin-top: 300px;
 }
